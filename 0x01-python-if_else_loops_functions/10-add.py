@@ -4,5 +4,4 @@
 
 def add(a, b):
     """Return the addition of a and b."""
-    add = __import__(a + b)
-    print(add)
+    return (a + b)
