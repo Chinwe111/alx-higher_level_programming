@@ -9,8 +9,8 @@ if __name__ == "__main__":
     if count == 0:
         print("0 arguments.")
     else:
-        print(count, "argument" + ("s" if count > 1 else "")
-        print(":")
+        print(count, "argument" + ("s" if count > 1 else ""), end="")
+        print(":", end="")
 
         for i in range(count):
-            print("{}: {}".format(i + 1, sys.argv[i]))
+            print("{}: {}".format(i + 1, sys.argv[i], end=""))
