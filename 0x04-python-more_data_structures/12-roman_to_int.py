@@ -11,15 +11,15 @@ def roman_to_int(roman_string):
     last_rom = 0
 
     for char in roman_string:
-        if (char != rom_n):
+        if char not in rom_n:
             return 0
         list_rom = rom_n[char]
 
-        if (list_rom > last_rom):
+        if list_rom > last_rom:
             num += list_rom - 2 * last_rom
         else:
             num += list_rom
 
         last_rom = list_rom
 
-    return (num)
+    return num
