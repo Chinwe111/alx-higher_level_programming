@@ -9,12 +9,14 @@ class Rectangle:
         """Initialize a new rectangle"""
         if type(width) is not int:
             raise TypeError("Width must be an integer")
-        elif:
-            raise ValueError("Width must be >= 0")
+        else:
+            if width < 0:
+                raise ValueError("Width must be >= 0")
         if type(height) is not int:
             raise TypeError("Height must be an integer")
-        elif:
-            raise ValueError("Height must be >= 0")
+        else:
+            if height < 0:
+                raise ValueError("Height must be >= 0")
 
         self.__height = height
         self.__width = width
@@ -31,10 +33,11 @@ class Rectangle:
         """
         ...
         """
-        if type(width) is not int:
+        if type(value) is not int:
             raise TypeError("Width must be an integer")
-        elif:
-            raise ValueError("Width must be >= 0")
+        else:
+            if width < 0:
+                raise ValueError("Width must be >= 0")
 
         self.__width = value
 
@@ -50,10 +53,11 @@ class Rectangle:
         """
         ...
         """
-        if type(height) is not int:
+        if type(value) is not int:
             raise TypeError("Height must be an integer")
-        elif:
-            raise ValueError("Height must be >= 0")
+        else:
+            if height < 0:
+                raise ValueError("Height must be >= 0")
         self.__height = value
 
     def area(self):
