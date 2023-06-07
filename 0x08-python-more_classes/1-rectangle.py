@@ -44,14 +44,14 @@ class Rectangle:
     @property
     def height(self):
         """
-        ...
+        Getter method
         """
         return self.__height
 
     @height.setter
     def height(self, value):
         """
-        ...
+        Setter method
         """
         if type(value) is not int:
             raise TypeError("Height must be an integer")
